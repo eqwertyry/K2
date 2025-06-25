@@ -464,6 +464,161 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .header_Text h1 {
+    font-size: 2.5vh;
+  }
+
+ .menu_item {
+  display: inline-block;
+  font-size: 2.5vh;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+  .menu{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 10px; 
+  flex-wrap: wrap;
+  }
+
+  .in_img_header {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1svh;
+    text-align: center;
+    color: white;
+    padding: 0 5%;
+  }
+  .headerfone{
+    height: 30vh;
+  }
+
+  .info_button {
+    width: 90%;
+    height: auto;
+  }
+
+  .info_button img {
+    height: 20vh;
+  }
+
+  .info_button h2 {
+    font-size: 1.8vh;
+  }
+
+  .card {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .main_img {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .features {
+    font-size: 2vh;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+  }
+
+  .features li {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  .Name {
+    font-size: 2.5vh;
+    margin-top: 10px;
+  }
+
+  .buy {  
+    width: 80%;
+    margin: 20px auto 10px;
+    font-size: 2vh;
+    padding: 10px;
+    
+  }
+  .buy p{
+    margin-top: -0.5%;
+  }
+
+  .main_theme_text {
+    font-size: 3vh;
+  }
+
+  .footer_text {
+    font-size: 2.5vh;
+  }
+
+  .footer_info {
+    font-size: 2vh;
+  }
+  .info_overlay{
+    right: -5%;
+    bottom: 25%;
+  }
+  .info_overlay img{
+    width: 40%; 
+    height: auto;
+  }
+  .contacts {
+    font-size: 1.5vh;
+  }
+
+  .social_networks img {
+    width: 8%;
+  }
+
+  .modal-content,
+  .modul1-content,
+  .modul2-content {
+  max-height: 80vh; 
+  overflow-y: auto; 
+  padding: 20px;
+  background-color: #F7F6F4;
+  border-radius: 12px;
+  margin: 8vh auto; 
+  width: 90%; 
+  }
+
+  .modal-content .social_networks img {
+    width: 18%;
+  }
+
+.headerfone{
+  width: 100%;
+  height: 40vh;
+}
+.menu a{
+  padding: 0;
+  margin: 0;
+  font-size: 1vh;
+}
+.purchase{
+  gap: 80px;
+}
+  .price{
+    font-size: 2vh;
+  }
+  .modul1{
+    padding-left: 5%;
+  }
+}
+
 @media (min-width: 424px) and (max-width: 1366px) {
   .menu {
     display: flex;
