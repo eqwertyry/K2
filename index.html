@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КУПЕЛИ</title>
+    <link rel="shortcut icon" href="images/SHT.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    
+
+</head>
+<body>
+    <header>
+        <div class = "header_Text" id="Home">
+            <h1>Street Hot Tub</h1>
+        </div>
+        <div class = "menu">
+        <a class="menu_item" href="#Home">Home</a>
+        <a class="menu_item" href="#Info">Info</a>
+        <a class="menu_item" href="#Products">Products</a>
+        <a class="menu_item" href="#Contact">Contact</a>
+        </div>
+       
+        
+        <img class="headerfone" src="images/MXJz1XUOSNm5aop1iwcwSA.webp" alt="">
+    <div class = "in_img_header">
+        <h2>Bathing barrels and hot tubs <br> Wood fired jacuzzi</h2>
+         <h2></h2>
+     </div>
+  
+    </header>
+
+    <main class = "main_theme">
+        <div class = "info_SHT">
+            <h2>Info about Street Hot Tub</h2>
+            <div class = "info_button_cont"  id="Info">
+                <button onclick="showModalInfo1()" class ="info_button">
+                    <img src="images/jacuzzi-ogrodowe-balia-thermo-0-brak-impregnacji-w-scaled.jpg" alt="">
+                    <h2>What is a Street Hot Tub?
+                        <br>ㅤ
+                    </h2>
+                </button>  
+
+                <button onclick = "showModalInfo2()" class ="info_button">                 
+                    <img src="images/2018.08.09-Composit-group-040_450x250_6f6.jpg" alt="">
+                    <h2>Choosing the Perfect Hot Tub: <br> Wood vs Polypropylene</h2>
+                    </button>
+                </div>    
+            </div>
+
+                <script>
+                    function showModalInfo1() {
+                  var modul1 = document.createElement('div');
+                  modul1.className = 'modul1';
+                  modul1.innerHTML = `
+                  <div class="modul1-content"> 
+
+                 <div class = "block1"> <p>Street Hot Tub is a round or oval wooden  or plastic bathing structure designed for outdoor recreation at any time of the year. 
+                   <img src="images/cedartimberwoodfiredhottubsbccanada_1000.jpeg" alt="">
+                  It is equipped with a water heating system (wood cooker, electric or gas heater), which allows you to enjoy hot water even in cold weather. Ideal for country houses, baths and summer houses. 
+                  </div>
+                   <div class = "block2"> <img src="images/24e789b9-b526-4361-958c-d9a75d1280b9.jfif" alt="">
+                  Provides relaxation, improves blood circulation and gives an atmosphere of cosiness and privacy.</p>
+                  </div>
+                  </div>'
+                  `;
+                  document.body.appendChild(modul1)
+                  modul1.style.display = 'block';
+                  modul1.addEventListener('click', function() {
+                    this.style.display = 'none';
+                    document.body.removeChild(this);
+                  }
+                  )}
+                function showModalInfo2() {
+  const modul2 = document.createElement('div');
+  modul2.className = 'modul2';
+
+  modul2.innerHTML = `
+    <div class="modul2-content" onclick="event.stopPropagation()">
+
+      <h2>  Wooden Hot Tub: </h2>
+      <img src="images/wood2.jpg" alt="Wooden Hot Tub 2">
+      <img src="images/wood.jpg" alt="Wooden Hot Tub">
+      <p>Wooden font is a classic of country holidays. Made of larch, oak or cedar, they create a unique atmosphere of cosiness and warmth, filling the air with natural wood aroma. They go well with bathhouses and eco-style landscaping. However, they require regular maintenance and are more sensitive to temperature and humidity fluctuations.</p>
+
+      <h2>  Polypropylene Hot Tub: </h2>
+      <img src="images/poli.jpeg" alt="Polypropylene Hot Tub">
+      <img src="images/pol.jpeg" alt="Polypropylene Hot Tub 2">
+      <p>Polypropylene baths are a practical and durable solution. They are fully airtight, weatherproof, comfortable to use and easy to clean. They can be retrofitted with hydro-massage, lighting or insulation. A great choice for those who appreciate comfort, functionality and modern style.</p>
+    </div>
+  `;
+
+  document.body.appendChild(modul2);
+  modul2.style.display = 'flex';
+
+  modul2.addEventListener('click', function () {
+    document.body.removeChild(this);
+  });
+}
+               
+                </script>
+
+        </div>
+        <h3 class = "main_theme_text"  id="Products">Product catalog</h3>
+
+         <div class = "card_container">
+            <div class = "card">
+                <h2 class = "Name">Hot_Tub 160 Round</h2>
+                 <img class = "main_img" src="images/PP-1800-mm-White-thermowood-C-steps-7.png.webp" alt=""> 
+                <ul class="features">
+             <li><strong>Capacity:</strong> 2-4 people</li>
+             <li><strong>Water Volume:</strong> 1000 L</li>
+             <li><strong>Diameter:</strong> 1.6 m</li>
+             <li><strong>Furnace:</strong> Wood-fired</li>
+             <li><strong>Design:</strong> Round</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 160 HOT</li>
+                </ul>
+
+                <div class = "purchase">
+                <p class = "price">Price 1800$</p>
+                <button onclick="showModal()" class ="buy" id="openModalButton">
+                    <p>Buy</p>
+                </button>
+            </div>
+            </div>
+            
+
+            <div class = "card">
+             <h2 class = "Name">Hot_Tub 200 Square</h2>
+            <img class = "main_img" src="images/PP-SQUER-2200-x2200-16.png.webp" alt="">
+                <ul class="features">
+             <li><strong>Capacity:</strong> 4-8 people</li>
+             <li><strong>Water Volume:</strong> 1500 L</li>
+             <li><strong>Diameter:</strong> 2.0 m</li>
+             <li><strong>Furnace:</strong> Wood-fired</li>
+             <li><strong>Design:</strong> Square</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub BOX 200 HOT</li>
+                </ul>
+                  <div class = "purchase">
+                <p class = "price">Price 2800$</p>
+                <button onclick="showModal()" class ="buy">
+                    <p>Buy</p>
+                </button>
+                </div>
+            </div>
+            <div class = "card">
+                 <h2 class = "Name">Hot_Tub 200 Round</h2>
+                <img class = "main_img" src="images/comfort220-3-pine-2k-transp-rgb.png " alt="">
+                 <ul class="features">
+             <li><strong>Capacity:</strong> 4-6 people</li>
+             <li><strong>Water Volume:</strong> 1300 L</li>
+             <li><strong>Diameter:</strong> 2.0 m</li>
+             <li><strong>Furnace:</strong> Wood-fired</li>
+             <li><strong>Design:</strong> Round</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 200 HOT</li>
+                </ul>
+                  <div class = "purchase">
+                <p class = "price">Price 2500$</p>
+                <button onclick="showModal()" class ="buy">
+                    <p>Buy</p>
+                </button>
+                </div>
+            </div>
+            <div class = "card">
+                 <h2 class = "Name">Cold_Tub 160 Round</h2>
+                <img class = "main_img" src="images/comfort160n-3-pine-2k-transp-rgb.png" alt="">
+                 <ul class="features">
+             <li><strong>Capacity:</strong> 2-4 people</li>
+             <li><strong>Water Volume:</strong> 1000 L</li>
+             <li><strong>Diameter:</strong> 1.6 m</li>
+             <li><strong>Furnace:</strong> NO FURNACE</li>
+             <li><strong>Design:</strong> Round</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 200 COLD</li>
+                </ul>
+                 <div class = "purchase">
+                <p class = "price">Price 1000$</p>
+                <button onclick="showModal()" class ="buy">
+                    <p>Buy</p>
+                </button>
+                </div>
+                <script>
+
+                    function showModal() {
+                  var modal = document.createElement('div');
+                  modal.className = 'modal';
+                  modal.innerHTML = '<div class="modal-content"> <p> For buy, write here: </p> <div class = "social_networks">  <a href="https://t.me/StreetHotTub" target="_blank"> <img src="images/social-media_15789337.png" alt=""> </a> <a href="https://www.instagram.com/sreet_hot_tub/" target="_blank"> <img src="images/instagram_2111463.png" alt=""> </a>   <a href="https://connect.viber.com/business/61bfe1ea-4f5d-11f0-8dcf-42c9a7bc9149?utm_source=manage&utm_medium=copy_link" target="_blank"> <img src="images/viber.png" alt=""> </a></div> </div>';
+                  document.body.appendChild(modal);
+
+                  modal.style.display = 'block';
+                  modal.addEventListener('click', function() {
+                    this.style.display = 'none';
+                    document.body.removeChild(this);
+                  });
+                }               
+
+                </script>
+            </div>
+            
+            <div class = "about_us">
+
+            </div>
+            
+         </div>
+    </main>
+
+    <footer>
+        <div class = "footer_theme">
+            <p class = "footer_text" id = "Contact">Contacts</p>
+                <div class = "footer_info">
+                     <i class="fi fi-rr-envelope"></i>
+                     <i class="fi fi-rr-phone-call"> </i>
+                     <i class="fi fi-rr-marker">  </i> 
+                </div>
+                <div class = "contacts">
+                    <p>mail@gmail.com</p>
+                    <p>+381615868589</p>
+                    <p>Serbia, Novi-Sad</p>
+                </div>
+                <div class = "social_networks">
+                     <a href="https://t.me/StreetHotTub" target="_blank">       
+                    <img src="images/social-media_15789337.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/sreet_hot_tub/" target="_blank">       
+                    <img src="images/instagram_2111463.png" alt="" >
+                    </a>
+                    <a href="https://connect.viber.com/business/61bfe1ea-4f5d-11f0-8dcf-42c9a7bc9149?utm_source=manage&utm_medium=copy_link" target="_blank">       
+                    <img src="images/viber.png" alt="">
+                    </a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
