@@ -413,11 +413,11 @@ body {
     font-size: 2vh;
   }
   .info_overlay{
-    right: 5%;
+    right: -5%;
     bottom: 25%;
   }
   .info_overlay img{
-    width: 70%;
+    width: 50%;
     height: auto;
   }
   .contacts {
