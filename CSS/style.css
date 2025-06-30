@@ -27,7 +27,7 @@ body {
 }
 .in_img_header{
     text-align: center;
-    margin-top: -42%;
+    margin-top: -40%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     font-size: 3vh;
@@ -94,7 +94,7 @@ body {
     margin: 3% 3% 3% 3%;
     color: #444444;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
 }
 .info_button img{
     border-radius: 5% 5% 5% 5%;
@@ -117,7 +117,6 @@ body {
   bottom: 20%;  
   right: 10%;
   color: white;
-  background: ;
   border-radius: 50%;
   padding: 5px 9px;
   pointer-events: none;
